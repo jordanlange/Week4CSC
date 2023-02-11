@@ -32,6 +32,7 @@ namespace lange_week3Assignment.Controllers
 
                 foreach (int i in lint)
                 {
+                    System.Console.WriteLine(LogObject(i));
                     counter++;
                     sum += i;
                     sumSquares += i * i;
@@ -56,6 +57,13 @@ namespace lange_week3Assignment.Controllers
 
 
             return slist;
+        }
+        string LogObject(double i)
+        {   
+            System.Diagnostics.Debug.WriteLine(i);
+            //System.Console.WriteLine();
+            string j = Convert.ToString(i);
+            return j;
         }
     }
 }
